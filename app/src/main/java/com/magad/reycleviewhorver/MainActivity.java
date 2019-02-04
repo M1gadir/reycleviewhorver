@@ -55,29 +55,30 @@ public class MainActivity extends AppCompatActivity {
         public void onBindViewHolder(@NonNull BuahHor buahHor, final int i) {
         buahHor.imv.setImageResource(jenisimg[i]);
         buahHor.tvm.setText(jenisbuh[i]);
-        buahHor.itemView.setOnClickListener(new View.OnClickListener() {
+            buahHor.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     switch (i) {
                         case 0:
-                            Toast.makeText(MainActivity.this, "ini jenis buah buahan ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "ini buah merk macbook ", Toast.LENGTH_SHORT).show();
                             break;
                         case 1:
-                            Toast.makeText(MainActivity.this, "ini jenis kacang kacangan", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "ini buah ada di pop corn", Toast.LENGTH_SHORT).show();
                             break;
                         case 2:
-                            Toast.makeText(MainActivity.this, "ini adalah buah pisang", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "ini jenis sayuran", Toast.LENGTH_SHORT).show();
                             break;
                         case 3:
-                            Toast.makeText(MainActivity.this, "ini buah yang memiliki kandungan air yang banyak", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "ini jenis makanan", Toast.LENGTH_SHORT).show();
                             break;
                         case 4:
-                            Toast.makeText(MainActivity.this, "ini jenis makanan kesukaan kelinci", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "ini jenis buah berair", Toast.LENGTH_SHORT).show();
                             break;
                     }
 
                 }
             });
+//
         }
 
         @Override
@@ -112,27 +113,28 @@ public class MainActivity extends AppCompatActivity {
             buahver.imv.setImageResource(imgbuah[i]);
             buahver.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
-                    switch (i) {
-                        case 0:
-                            Toast.makeText(MainActivity.this, "ini buah merk macbook ", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 1:
-                            Toast.makeText(MainActivity.this, "ini buah ada di pop corn", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 2:
-                            Toast.makeText(MainActivity.this, "ini jenis sayuran", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 3:
-                            Toast.makeText(MainActivity.this, "ini jenis makanan", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 4:
-                            Toast.makeText(MainActivity.this, "ini jenis buah berair", Toast.LENGTH_SHORT).show();
-                            break;
-                    }
-
+            public void onClick(View v) {
+                switch (i) {
+                    case 0:
+                        Toast.makeText(MainActivity.this, "ini jenis buah buahan ", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        Toast.makeText(MainActivity.this, "ini jenis kacang kacangan", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(MainActivity.this, "ini adalah buah pisang", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 3:
+                        Toast.makeText(MainActivity.this, "ini buah yang memiliki kandungan air yang banyak", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 4:
+                        Toast.makeText(MainActivity.this, "ini jenis makanan kesukaan kelinci", Toast.LENGTH_SHORT).show();
+                        break;
                 }
-            });
+
+            }
+        });
+
         }
 
         @Override
